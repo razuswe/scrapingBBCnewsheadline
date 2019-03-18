@@ -1,0 +1,183 @@
+ERROR:root:
+Traceback (most recent call last):
+  File "C:/Users/ronyse/PycharmProjects/web_scrapping_daily_star/m_scrap.py", line 12, in <module>
+    raise Exception
+Exception
+ERROR:root:<urlopen error [Errno 11001] getaddrinfo failed>
+Traceback (most recent call last):
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1384, in connect
+    super().connect()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 21, in retrieve_webpage
+    html = urlopen(self.__url)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 37, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 46, in read_webpage_as_html
+    self.__data = fobj.read()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 46, in read_webpage_as_html
+    self.__data = fobj.read()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+ERROR:root:<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+Traceback (most recent call last):
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1384, in connect
+    super().connect()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\socket.py", line 727, in create_connection
+    raise err
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 21, in retrieve_webpage
+    html = urlopen(self.__url)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 37, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 46, in read_webpage_as_html
+    self.__data = fobj.read()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 46, in read_webpage_as_html
+    self.__data = fobj.read()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 35, in write_webpage_as_html
+    fobj.write(data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 46, in read_webpage_as_html
+    self.__data = fobj.read()
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 18585: character maps to <undefined>
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 21, in retrieve_webpage
+    html = urlopen(self.__url)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 641, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 37, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 21, in retrieve_webpage
+    html = urlopen(self.__url)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 641, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\ronyse\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\ronyse\PycharmProjects\web_scrapping_daily_star\web_scrap\w_scrap.py", line 37, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
