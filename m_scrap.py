@@ -1,7 +1,7 @@
 # author: Razu Ahmed
 
 # ---------------------------
-#       Daily Star Scrap
+#       BBC News Scrap
 # ---------------------------
 
 from web_scrap import w_log
